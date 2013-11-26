@@ -1,7 +1,30 @@
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 from numpy import *
 from venture.shortcuts import *
 v=make_church_prime_ripl()
+
+
+
+
 v.set_seed(1995)
 v.assume('t','(lambda (mu var nu) ( (lambda () (normal mu (rt_inv (gamma (* .5 nu) (* var .5 nu)) )) ) ) )') 
 v.assume('rt_inv','(lambda (x) (power (/ 1.0 x) 0.5) ) ') 
@@ -9,12 +32,29 @@ v.assume('sq','(lambda (x) (power x 2.0))')
 v.assume('get_dm_j','(mem (lambda (j) (make_dir_mult 105 1 1) ) ) ') 
 v.assume('get_d_type','(mem (lambda (c j) ((get_dm_j j)) )) ') 
 v.assume('alpha','(uniform_continuous 1 2.5)') 
+
+
+
+
+
+
+
 v.assume('cluster_crp','(make_crp alpha)') 
 v.assume('get_z','(mem (lambda (i) (cluster_crp) ) ) ') 
 v.assume('mu_loc','10') 
 v.assume('mu_scale','10') 
 v.assume('sigma_scale','.5') 
 v.assume('get_mu','(mem (lambda (c j) (normal mu_loc mu_scale)))') 
+
+
+
+
+
+
+
+
+
+
 v.assume('get_sigma','(mem (lambda (c j) (gamma 1 sigma_scale)))') 
 v.assume('get_nu','(mem (lambda (c j) (gamma 3 1)))') 
 v.assume('noise','(gamma 1 4)') 
