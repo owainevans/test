@@ -14,3 +14,6 @@ david friedman, saying the market failures result from decision
  theory problems. not really intrinsic to markets. example: CO2
  is bad for everyone. everyone might prefer a switch to lower
  C02 regime. but not worth it if most people won't do it. suppose you can emit CO2 without being noticed (not true, but small emissions hard to measure). gov can ban CO2 use, but people can just ignore the ban. you still have some problem of coordination and defection. (example of illegal drugs. we might all agree that its better if cocaine was not available. but given that some are likely to defect and using drug is good for person X, he may use it. gov can ban it, but it doesn't stop people actually using it. --friedman gave more compelling example of soldiers on foot against horses. they do best to all standground and not run. but given that some will run, best to run also, o/w you're one of the few left and bound to die. 
+
+
+NEW ADDITIONS
